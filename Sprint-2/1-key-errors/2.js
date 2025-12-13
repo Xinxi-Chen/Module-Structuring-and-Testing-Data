@@ -4,17 +4,22 @@
 // this function should square any number but instead we're going to get an error
 
 // =============> write your prediction of the error here
+The parameter 3 is an error.
+
 
 function square(3) {
     return num * num;
 }
 
 // =============> write the error message here
-
+function square(3)
 // =============> explain this error message here
-
+The parameter should 2 is a problem. It should be num, otherwise there is no declaration of num.
 // Finally, correct the code to fix the problem
 
 // =============> write your new code here
 
-
+function square(num) {
+    return num * num;
+}
+console.log(square(3));
