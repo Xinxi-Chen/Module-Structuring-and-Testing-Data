@@ -10,6 +10,7 @@ function formatTimeDisplay(seconds) {
 
   return `${pad(totalHours)}:${pad(remainingMinutes)}:${pad(remainingSeconds)}`;
 }
+console.log(formatTimeDisplay(61));
 
 // You will need to play computer with this example - use the Python Visualiser https://pythontutor.com/visualize.html#mode=edit
 // to help you answer these questions
@@ -18,6 +19,7 @@ function formatTimeDisplay(seconds) {
 
 // a) When formatTimeDisplay is called how many times will pad be called?
 // =============> write your answer here
+// 3 times. First, pad(totalHours); Second, pad(remainingMinutes); Third, pad(remainingSeconds).
 
 // Call formatTimeDisplay with an input of 61, now answer the following:
 
@@ -26,9 +28,10 @@ function formatTimeDisplay(seconds) {
 
 // c) What is the return value of pad is called for the first time?
 // =============> write your answer here
-
+  0
 // d) What is the value assigned to num when pad is called for the last time in this program?  Explain your answer
 // =============> write your answer here
-
+  00, because after the function formatTimeDisplay(61) execute its argorithm, the hour value is 0, then function pad(num) converts all the num to 2 digit format. 
 // e) What is the return value assigned to num when pad is called for the last time in this program?  Explain your answer
 // =============> write your answer here
+  01, because after the function formatTimeDisplay(61) execute its argorithm, the hour value is 1, then function pad(num) converts all the num to 2 digit format, thus why it's 01.
